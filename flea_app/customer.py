@@ -3,7 +3,8 @@ from store_db import ECommerceSystem
 
 class ECommerce:
     def __init__(self):
-        self.ecommerce_system = ECommerceSystem("localhost", "root", "Anumula@123$", "ecomm_db")
+
+        self.ecommerce_system = ECommerceSystem("localhost", "root", "tiger", "fleakart")
         self.products = self.ecommerce_system.get_product_list()
         self.product_catalog = []
         self.categories = {'Hats': [], 'Sneakers': [], 'Jackets': [], 'Women': [], 'Men': []}
