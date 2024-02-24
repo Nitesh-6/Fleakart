@@ -22,9 +22,8 @@ def main():
             print("Invalid username or password. Please try again.")
 
 
-
     while True:
-        print("\nWelcome to E-Commerce Console!")
+        print("\nWelcome to Fleakart Console!")
         print("1. Display Categories")
         print("2. Select Category and View Products")
         print("3. View Cart")

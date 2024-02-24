@@ -12,6 +12,14 @@ class ECommerce:
         print("3. Books")
         # Add more categories as needed
 
+    # def display_products_by_category(self, category_id):
+    #     # Retrieve and display products based on the selected category
+    #     select_query = "SELECT id, name, price FROM products WHERE category_id = %s"
+    #     self.db.cursor.execute(select_query, (category_id,))
+    #     products = self.db.cursor.fetchall()
+    #     print("Products in this category:")
+    #     for product in products:
+    #         print(f"{product[0]}. {product[1]} - ${product[2]:.2f}")
     def display_products_by_category(self, category_id):
         # Retrieve and display products based on the selected category
         select_query = "SELECT id, name, price FROM products WHERE category_id = %s"
@@ -20,7 +28,7 @@ class ECommerce:
         print("Products in this category:")
         for product in products:
             print(f"{product[0]}. {product[1]} - ${product[2]:.2f}")
-
+            
     def add_to_cart(self, user_id, product_id):
         # Add a product to the user's cart
         insert_query = "INSERT INTO cart (user_id, product_id) VALUES (%s, %s)"
